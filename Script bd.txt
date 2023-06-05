@@ -1,0 +1,54 @@
+CREATE TABLE PruebaTenica.Usuarios (
+  ID INT PRIMARY KEY,
+  Num_documento INT,
+  Email VARCHAR(255),
+  Comentarios TEXT,
+  marcaFav VARCHAR(255),
+  fechaResp DATE,
+  Usuario VARCHAR(255),
+  contraseña VARCHAR(255)
+);
+
+create table PruebaTecnica.MarcaPC
+
+(
+  ID INT PRIMARY KEY,
+  Nombre  VARCHAR(255)  
+);
+
+
+CREATE TABLE PruebaTenica.usuario (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(50) NOT NULL,
+  contraseña VARCHAR(50) NOT NULL
+);
+
+
+INSERT INTO PruebaTenica.usuario (usuario, contraseña)
+VALUES
+  ('usuario1', '1234'),
+  ('usuario2', '1234'),
+  ('usuario3', '1234'),
+  ('usuario4', '1234');
+
+ 
+
+
+CREATE TABLE PruebaTenica.encuesta (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    num_documento INT,
+    email VARCHAR(255),
+    comentario TEXT,
+    marca_favorito_pc VARCHAR(255),
+    fecha_respuesta DATETIME
+);
+
+
+
+ 
+
+INSERT INTO PruebaTenica.encuesta (num_documento, email, comentario, marca_favorito_pc, fecha_respuesta)
+VALUES
+    (123456789, 'usuario1@example.com', 'Buen producto', 'HP', '2023-06-02 09:30:00'),
+    (987654321, 'usuario2@example.com', 'Excelente servicio', 'Dell', '2023-06-02 10:45:00'),
+    (654321987, 'usuario3@example.com', 'Mejorar la calidad', 'Lenovo', '2023-06-02 12:15:00');
